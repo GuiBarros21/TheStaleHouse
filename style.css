@@ -836,6 +836,8 @@ li {
 
 .wine-area {
     overflow-x: hidden;
+    overflow: hidden;
+    overflow-y: hidden;
 }
 
 .wine-thumbnail {
@@ -857,6 +859,8 @@ li {
     font-weight: 600;
     margin-bottom: 30px;
     display: block;
+    overflow-y: hidden;
+    overflow: hidden;
 }
 
 
@@ -922,6 +926,13 @@ li {
     transition-duration: 500ms;
 }
 
+.stable-menu-list{
+    padding: 50px 50px 50px;
+    z-index: inherit;
+    -webkit-animation-direction: initial;
+    -webkit-animation-name: initial;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 .dish-info {
     display: -webkit-box;
     display: -ms-flexbox;
