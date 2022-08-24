@@ -58,38 +58,6 @@
             navText: ['<i class="fa fa-arrow-left" aria-hidden="true"></i>', '<i class="fa fa-arrow-right" aria-hidden="true"></i>']
         })
     }
-
-    // Search Active Code
-    $('#search-btn, #closeBtn').on('click', function () {
-        $('body').toggleClass('search-form-on');
-    });
-
-    // Dishes Menu Btn Style Active Code
-    $('.portfolio-menu button').on('click', function () {
-        $('.portfolio-menu button').removeClass('active');
-        $(this).addClass('active');
-    })
-    
-    // Dishes Menu Active Code
-    if ($.fn.imagesLoaded) {
-        $('.stable-portfolio').imagesLoaded(function () {
-            // filter items on button click
-            $('.portfolio-menu').on('click', 'button', function () {
-                var filterValue = $(this).attr('data-filter');
-                $grid.isotope({
-                    filter: filterValue
-                });
-            });
-            // init Isotope
-            var $grid = $('.stable-portfolio').isotope({
-                itemSelector: '.single_menu_item',
-                percentPosition: true,
-                masonry: {
-                    columnWidth: '.single_menu_item'
-                }
-            });
-        });
-    }
     
     // Btn ScrollDown Active Code
     $("#menubtn").on('click', function () {
